@@ -26,7 +26,7 @@ public class Main {
 		System.out.println(shabbirSaving);
 		System.out.println(faisalSaving);
 
-		/*
+		
 		Customer c = new Customer(10, "Customer");
 		System.out.println(c);
 
@@ -35,8 +35,14 @@ public class Main {
 
 		Account a = new Account(201, 10, "asldkfjasdl");
 		System.out.println(a);
-		*/
 		
+		//Single line comment
+		
+		/*
+			muliti line
+			comment
+		*/
+
 	}
 
 	
