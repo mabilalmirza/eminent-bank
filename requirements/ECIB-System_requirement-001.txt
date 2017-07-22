@@ -1,0 +1,98 @@
+Eminent Corporate Islamic Bank (ECIB) is new emerging bank in the industry. You have been selected to take part in developing its first class and most advanced coputerized system.
+
+In initial phase, As per requirement, you need to create following directory structure.
+
+
+eminent-bank 	<< (project's root directory)
+|
+|__ models
+|	|__ class-diagram.dia
+|
+|__ src 		<< (Source Code Directory)
+	|__ Main.java
+	|__ com
+		|__ ecib
+			|__ Customer.java
+			|__ Account.java
+
+
+Create class as per below requirements
+
+Customer
+========
+package : com.ecib
+
+Fields
+	» id
+	» name
+	» age
+
+Constraints:
+	» Customer cannot be created without id and name. (i.e. create a constructor with id and name field).
+	» Field age cannot be negative.
+
+
+Account
+========
+package : com.ecib
+
+Fields
+	» number
+	» customerId
+	» type
+	» balance
+
+Constraints:
+	» Account cannot be created without number, customerId and type.
+	» Field type can only be "current", "saving". Invalid type will be changed to "current".
+	» balance can be negative.
+
+
+Main
+========
+» Create following objects of Customer.
+
+  •	id = 1
+	name = Muhammad Shabbir Mirza
+	age = 70
+
+  •	id = 2
+	name = Muhammad Faisal Mirza
+	age = 31
+
+
+» Create following objects of Accounts.
+
+  • number = 101
+  	customerId = 1	
+  	type = current
+  	balance = 20,000	//You can type 20_000 in java
+
+  • number = 102
+  	customerId = 1	
+  	type = saving
+  	balance = 90,000
+
+  • number = 103
+  	customerId = 2	
+  	type = saving
+  	balance = 5,000
+
+
+
+* You need to create a class diagram in 'models' directory. Create representation of Customer and Account classes.
+
+* Implement Encapsulation in Customer and Account classes.
+
+==========================================
+Submission:
+
+Date: Thursday, July 20, 2017
+Time: 06:30 pm
+
+* Compress 'eminent-bank' as zip or 7z file and send via email at mabilalmirza@gmail.com.
+
+* Optional Assignment : GIT
+	» Explore website and create account github.com
+	» Install Git : https://git-scm.com/downloads
+	» Install Source Tree : https://www.sourcetreeapp.com/
