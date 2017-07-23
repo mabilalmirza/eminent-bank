@@ -1,4 +1,4 @@
-import com.ecib.*;
+package com.ecib;
 
 public class Main {
 

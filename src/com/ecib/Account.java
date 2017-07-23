@@ -44,5 +44,4 @@ public class Account{
 		return "Number: " + this.number + ", Customer ID: " + this.customerId + ", Type: " + this.type + ", Balance: " + this.balance;
 	}
 
-
 }
