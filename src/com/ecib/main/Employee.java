@@ -1,27 +1,26 @@
-package com.ecib;
+package com.ecib.main;
 
-public class Employee {
+import com.ecib.Human;
 
-	private int id;
+public class Employee extends Human {
+
 	private String cnic;
-	private String name;
-	private int age;
 	private String designation;
 	private String phone;
 	private String address;
 	
-	public Employee(int id, String cnic, String name) {
-		this.id = id;
+	public Employee(int id, String name, String cnic) {
+		setId(id);
+		setName(name);
 		this.cnic = cnic;
-		this.name = name;
 	}
 
-	public int getAge() {
-		return age;
+	public String getCnic() {
+		return cnic;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setCnic(String cnic) {
+		this.cnic = cnic;
 	}
 
 	public String getDesignation() {
@@ -46,18 +45,6 @@ public class Employee {
 
 	public void setAddress(String address) {
 		this.address = address;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public String getCnic() {
-		return cnic;
-	}
-
-	public String getName() {
-		return name;
 	}
 	
 }

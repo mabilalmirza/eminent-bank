@@ -1,40 +1,24 @@
 package com.ecib;
 
-public class Customer {
+public class Customer extends Human {
 
-	private int id;
-	private String name;
-	private int age;
+	private String nationality;
 
 	public Customer(int id, String name) {
-		this.id = id;
-		this.name = name;
+		setId(id);
+		setName(name);
 	}
-
-	public int getId() {
-		return this.id;
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public int getAge() {
-		return this.age;
-	}
-
-	public void setAge(int age) {
-
-		if (age < 0) {
-			this.age = -1 * age;
-		} else {
-			this.age = age;
-		}
-
-	}
-
+	
 	public String toString() {
-		return "ID: " + this.id + ", Name: " + this.name + ", Age: " + this.age;
+		return "ID: " + getName() + ", Name: " + getName() + ", Age: " + getAge();
+	}
+	
+	public String getNationality() {
+		return nationality;
 	}
 
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+	
 }

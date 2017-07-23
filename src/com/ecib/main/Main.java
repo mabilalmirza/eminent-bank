@@ -1,4 +1,7 @@
-package com.ecib;
+package com.ecib.main;
+
+import com.ecib.Account;
+import com.ecib.Customer;
 
 public class Main {
 
@@ -21,27 +24,12 @@ public class Main {
 
 		System.out.println(shabbir);
 		System.out.println(faisal);
+		
+		System.out.println(shabbir.getAge());
 
 		System.out.println(shabbirCurrent);
 		System.out.println(shabbirSaving);
 		System.out.println(faisalSaving);
-
-		
-		Customer c = new Customer(10, "Customer");
-		System.out.println(c);
-
-		c.setAge(-50);
-		System.out.println(c);
-
-		Account a = new Account(201, 10, "asldkfjasdl");
-		System.out.println(a);
-		
-		//Single line comment
-		
-		/*
-			muliti line
-			comment
-		*/
 
 	}
 
