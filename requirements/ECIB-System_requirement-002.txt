@@ -1,0 +1,93 @@
+Eminent Comercial Islamic Bank has potential of rapid growth. Soon, bank will need to hire many professionals to start and continue it's operations. So bank needs a solid Employee Management System. Following oppotunities will be announced next week.
+
+• Regional Manager
+• Branch Manager
+• Manager
+• Junior Officer
+
+Each employee has following fields
+
+» Regional Manager
+  • ID 
+  • Name
+  • Phone
+  • Email
+  • Region
+  • Experience
+  
+» Branch Manager
+  • ID
+  • Name
+  • Phone
+  • Email
+  • Branch
+  • Experience
+
+» Manager
+  • ID
+  • Name
+  • Phone
+  • Email
+  • Branch
+  • Department
+  • Experience
+  
+» Junior Officer
+  • ID
+  • Name
+  • Phone
+  • Email
+  • Branch
+  • Department
+  • Experience
+  
+
+
+Currently there are two Regions
+01. Lahore
+02. Sargodha
+
+There are five branches. Three in Lahore, three in Sargodha. Relevant Branch ID is prefixed with region ID.
+
+0101 - Gulber Branch (Lahore)
+0102 - Johar Town Branch (Lahore)
+0103 - Bahria Town Branch (Lahore)
+0201 - Satellite Town Branch (Sargodha)
+0202 - University Road Branc (Sargodha)
+
+There will be two departments in each branch.
+• Accounts
+• Operations
+
+Experience is mentioned in number of years completed. 
+
+Monthly Salary of employees will be calculated as below.
+
+	Regional Manager:
+	  Rs. 500,000 + (Rs. 5000 * Experience)
+	
+	Branch Manager: 
+	  Rs 300_000 + (Rs. 4000 * Experience)
+	  
+	Manager:
+	  Rs 120,000 + (1000* Experience)  
+	  » + 5000, if Deparment is Accounts
+	  » + 4000, if Deparment is Operations
+	
+	Junior Officer:
+	  Rs 80,000 + (800* Experience)  
+	  » + 3000, if Deparment is Accounts
+	  » + 1500, if Deparment is Operations  
+	  
+	Otherwise:
+		Throw exception with message "Salary calculation not supported".	  
+
+Create proper structure of classes in com.ecib.employees package. Please note that an employee cannot be create without ID and name;
+
+
+Submission:
+	Friday, August 4. 2017 05:00 PM PKT
+   	
+   	Preferred wasy is to create a private git repository (github or bitbucket) for eminent-bank and share everythin in that.
+   	Otherwise share complete eminent-bank folder as zip via email.
+   	
